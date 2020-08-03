@@ -1,0 +1,32 @@
+
+GET http://localhost:5000/weather
+
+###
+
+GET http://localhost:5000/weather/5f269b536d536b0643bb12e0
+
+
+###
+POST http://localhost:5000/weather
+Content-Type: application/json
+
+{
+    "cityName":"Melbourne",
+    "countryName":"Australia",
+    "countryCode":"AU",
+}
+
+
+
+###
+PATCH  http://localhost:5000/weather/5f269b546d536b0643bb12e1
+Content-Type: application/json
+
+{
+    "cityName":"Guangzhou",
+    "countryName":"China",
+    "countryCode":"CH"
+}
+
+###
+DELETE http://localhost:5000/weather/5f269b556d536b0643bb12e2
